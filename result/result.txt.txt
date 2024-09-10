@@ -1,0 +1,4 @@
+Number of Cycles = 4096 * 20ns = 81920ns
+Clock Period = 20ns
+Performance = 30202.9702 * 4096 * 20 = 2474227319
+

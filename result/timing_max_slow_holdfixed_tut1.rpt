@@ -1,0 +1,130 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MyDesign
+Version: T-2022.03-SP4
+Date   : Tue Nov 21 14:22:26 2023
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: inst_a_reg[11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: outMatrix_reg[54]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                  0.0000     0.0000
+  clock network delay (ideal)            0.0000     0.0000
+  inst_a_reg[11]/CK (DFF_X1)             0.0000     0.0000 r
+  inst_a_reg[11]/QN (DFF_X1)             0.6218     0.6218 r
+  U3022/ZN (INV_X1)                      0.1498     0.7716 f
+  U4840/ZN (XNOR2_X2)                    0.2952     1.0667 f
+  U5431/ZN (INV_X1)                      0.1832     1.2499 r
+  U7162/ZN (INV_X4)                      0.1603     1.4102 f
+  U10560/ZN (OAI22_X1)                   0.6076     2.0178 r
+  U10717/S (FA_X1)                       0.8990     2.9168 f
+  U10727/CO (FA_X1)                      0.6671     3.5840 f
+  U10737/S (FA_X1)                       0.9105     4.4944 f
+  U10869/S (FA_X1)                       0.9206     5.4151 r
+  U10982/ZN (XNOR2_X1)                   0.3384     5.7535 r
+  U10983/ZN (XNOR2_X1)                   0.3830     6.1365 r
+  U10984/ZN (NAND2_X1)                   0.1285     6.2650 f
+  U10986/ZN (NAND2_X1)                   0.1868     6.4518 r
+  U14525/ZN (NAND2_X1)                   0.0918     6.5436 f
+  U14526/ZN (OAI211_X1)                  0.3508     6.8945 r
+  U14528/ZN (XNOR2_X1)                   0.3782     7.2727 r
+  U14529/ZN (XNOR2_X1)                   0.4050     7.6776 r
+  U14533/ZN (NOR2_X1)                    0.1293     7.8069 f
+  U2468/ZN (OAI21_X1)                    0.2569     8.0638 r
+  U2476/ZN (AOI21_X1)                    0.1507     8.2145 f
+  U3425/ZN (OR2_X1)                      0.3068     8.5214 f
+  U3400/ZN (AND3_X2)                     0.2842     8.8056 f
+  U15016/ZN (OAI21_X1)                   0.2007     9.0063 r
+  U3386/ZN (NOR2_X1)                     0.1027     9.1090 f
+  U2820/ZN (OAI21_X1)                    0.2734     9.3824 r
+  U15017/ZN (INV_X4)                     0.0749     9.4573 f
+  U2816/ZN (INV_X8)                      0.1297     9.5871 r
+  U15112/ZN (AOI21_X1)                   0.0983     9.6853 f
+  U15120/ZN (XNOR2_X1)                   0.2752     9.9606 r
+  U3324/ZN (INV_X1)                      0.1275    10.0881 f
+  U15485/ZN (XNOR2_X1)                   0.2629    10.3509 f
+  U15596/ZN (NOR2_X1)                    0.3091    10.6600 r
+  U15630/ZN (NAND2_X1)                   0.0915    10.7515 f
+  U15632/ZN (NOR2_X1)                    0.1844    10.9360 r
+  U2798/ZN (AND2_X1)                     0.1943    11.1302 r
+  U15642/ZN (NAND2_X1)                   0.0662    11.1965 f
+  U2796/ZN (OR2_X1)                      0.2905    11.4870 f
+  U3300/ZN (NAND2_X2)                    0.1520    11.6390 r
+  U3298/ZN (NOR2_X1)                     0.1135    11.7525 f
+  U4842/ZN (AOI21_X2)                    0.2539    12.0064 r
+  U15692/ZN (OAI21_X1)                   0.1351    12.1415 f
+  U4837/ZN (AOI21_X2)                    0.1964    12.3379 r
+  U4836/ZN (XNOR2_X2)                    0.3191    12.6570 r
+  U15709/ZN (XNOR2_X1)                   0.3714    13.0284 r
+  U15777/ZN (NAND2_X1)                   0.1549    13.1833 f
+  U2582/ZN (OAI21_X4)                    0.2333    13.4166 r
+  U2581/ZN (AOI21_X2)                    0.1070    13.5236 f
+  U15797/ZN (OAI21_X1)                   0.2417    13.7653 r
+  U3226/ZN (XNOR2_X1)                    0.4095    14.1748 r
+  U2775/ZN (NOR2_X2)                     0.0897    14.2645 f
+  U4812/ZN (NAND4_X2)                    0.2252    14.4897 r
+  U5630/ZN (NAND2_X2)                    0.0877    14.5774 f
+  U16088/ZN (INV_X4)                     0.0908    14.6681 r
+  U4869/ZN (NAND2_X2)                    0.0698    14.7379 f
+  U3211/ZN (NOR2_X2)                     0.1230    14.8610 r
+  U4808/ZN (NOR2_X2)                     0.0775    14.9384 f
+  U3210/ZN (NAND2_X2)                    0.1687    15.1072 r
+  U2751/ZN (INV_X4)                      0.0695    15.1767 f
+  U3204/ZN (NAND2_X2)                    0.1380    15.3147 r
+  U3202/ZN (INV_X4)                      0.1032    15.4178 f
+  U5633/ZN (INV_X4)                      0.1743    15.5922 r
+  U18229/ZN (NAND2_X4)                   0.1014    15.6935 f
+  U2743/ZN (INV_X4)                      0.2059    15.8994 r
+  U5864/ZN (NAND2_X1)                    0.0895    15.9889 f
+  U2726/ZN (AND2_X1)                     0.1658    16.1547 f
+  U5520/ZN (NAND2_X1)                    0.1725    16.3272 r
+  U5519/ZN (NAND2_X1)                    0.0930    16.4202 f
+  U3124/ZN (NAND4_X1)                    0.3402    16.7603 r
+  U5427/ZN (INV_X1)                      0.0972    16.8575 f
+  U19975/ZN (NAND2_X1)                   0.1210    16.9785 r
+  U3101/ZN (NAND3_X1)                    0.1049    17.0834 f
+  U20787/ZN (NAND4_X1)                   0.2696    17.3530 r
+  U20788/ZN (OAI21_X1)                   0.1222    17.4752 f
+  U20791/ZN (NAND4_X1)                   0.2487    17.7239 r
+  U3076/ZN (INV_X1)                      0.0803    17.8042 f
+  U20804/ZN (AND4_X2)                    0.2294    18.0336 f
+  U5375/ZN (NAND2_X2)                    0.1242    18.1578 r
+  U4810/ZN (NAND2_X2)                    0.0725    18.2304 f
+  U3054/ZN (INV_X2)                      0.0929    18.3233 r
+  U2688/ZN (AND3_X4)                     0.2612    18.5845 r
+  U21114/ZN (NAND2_X1)                   0.0752    18.6597 f
+  U5905/ZN (NAND2_X1)                    0.1282    18.7878 r
+  U21116/ZN (XNOR2_X1)                   0.3084    19.0962 r
+  U21117/ZN (NAND2_X1)                   0.0938    19.1900 f
+  U3031/ZN (AND3_X2)                     0.2340    19.4240 f
+  U21880/ZN (OAI22_X1)                   0.2292    19.6532 r
+  outMatrix_reg[54]/D (DFF_X1)           0.0000    19.6532 r
+  data arrival time                                19.6532
+
+  clock clk (rise edge)                 20.0000    20.0000
+  clock network delay (ideal)            0.0000    20.0000
+  clock uncertainty                     -0.0500    19.9500
+  outMatrix_reg[54]/CK (DFF_X1)          0.0000    19.9500 r
+  library setup time                    -0.2964    19.6536
+  data required time                               19.6536
+  -----------------------------------------------------------
+  data required time                               19.6536
+  data arrival time                               -19.6532
+  -----------------------------------------------------------
+  slack (MET)                                       0.0004
+
+
+1
